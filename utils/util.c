@@ -22,6 +22,6 @@ int generateUniqueId(char* id){
     printf("s= %lx, cs = %lu, ccs = %u, cccs = %lu, ns= %ld\n",sec, nsec, (unsigned int)nsec, insec, tn.tv_nsec);
     __pid_t pid = getpid();
     printf("pid= %d, idlen = %d\n", pid, sizeof(id));
-    snprintf(id, 128, "%d%d", pid, r);
+    snprintf(id, 20, "%d%d", pid, r);
     return 0;
 }
