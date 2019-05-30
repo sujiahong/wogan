@@ -16,7 +16,7 @@ int generateUniqueId(char* id){
 ssize_t readn(int fd, void* buf, size_t n){////从内核读
     size_t nleft;
     ssize_t nread;
-    nleft = n；
+    nleft = n;
     while(nleft > 0){
         if ((nread = read(fd, buf, nleft)) < 0){
             if (nleft == n) ///一个字节没写成功
